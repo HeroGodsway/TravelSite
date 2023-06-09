@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My TravelSite</title>
+  </head>
+
+  <body>
+    <!--This is an introduction to my website-->
+    <!-- Command + / is the macbook shortcut for comments -->
+    <!--  -->
+    <h1>Welcome to my TravelSite</h1>
+    <p>This site details some of the places I adore and hope to travel to</p>
+    <h2>Here some of the beautiful places I like to visit</h2>
+    <ul>
+      <li>
+        <img src="./Asset/Korea.jpeg" width="240" height="240" />
+        <a href="https://www.korea.net/AboutKorea/Tourism" target="_blank">
+          South Korea
+        </a>
+      </li>
+      <li>
+        <img src="./Asset/Malawi.jpeg" width="204" height="240" />
+        <a href="https://www.malawitourism.com/" target="_blank">Malawi</a>
+      </li>
+      <li>
+        <img src="./Asset/Portugal.jpeg" width="240" height="240" />
+        <a href="https://www.visitportugal.com/en" target="_blank"> Portugal</a>
+      </li>
+      <li>
+        <img src="./Asset/Italy.jpeg" width="240" height="240" />
+        <a href="https://www.visitportugal.com/en">Italy</a>
+      </li>
+    </ul>
+
+    <!-- <tr> creates a a row in html 
+        <th> creates a table header 
+          <td> to include a piece of data that goes into the table -->
+
+    <table>
+      <tr>
+        <th>Destination</th>
+        <th>Capital</th>
+        <th>Language</th>
+      </tr>
+      <tr>
+        <td>Korea</td>
+        <td>Seoul</td>
+        <td>Language</td>
+      </tr>
+      <tr>
+        <td>Malawi</td>
+        <td>Lilongwe</td>
+        <td>Chewa</td>
+      </tr>
+      <tr>
+        <td>Portugal</td>
+        <td>Lisbon</td>
+        <td>Portuguese</td>
+      </tr>
+      <tr>
+        <td>Italy</td>
+        <td>Rome</td>
+        <td>Italia</td>
+      </tr>
+    </table>
+
+    <h1>Where do you want to go?</h1>
+    <!-- use a form to allow tag to create a form here -->
+    <form>
+      <input placeholder="Type the place you want to travel" />
+      <input type="button" value="Search" /> <br />
+
+      <p>Select all that may apply</p>
+      <label for="Korea">
+        Korea <input type="checkbox" id="Korea" name="Korea"
+      /></label>
+      <label for="Malawi">
+        Malawi <input type="checkbox" id="Malawi" name="Malawi"
+      /></label>
+      <label for="Portugal">
+        Portugal <input type="checkbox" id="Portugal" name="Portugal"
+      /></label>
+      <label for="Italy"
+        >Italy <input type="checkbox" id="Italy" name="Italy"
+      /></label>
+      <br />
+
+      <p>What is your favourite type of travel location?</p>
+      <select>
+        <option value="Beach">Beach</option>
+        <option value="Mountain">Mountain</option>
+        <option value="City">City</option>
+      </select>
+      <br />
+      <textarea rows="10" cols="50">Tell us a little about yourself</textarea>
+      <br />
+      <br />
+      <input type="submit" value="Submit" />
+      <br />
+      <br />
+    </form>
+  </body>
+</html>
